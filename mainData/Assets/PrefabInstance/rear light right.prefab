@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1265938573011171}
+  m_IsPrefabParent: 1
+--- !u!1 &1265938573011171
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4017185538197932}
+  - component: {fileID: 33686832372038210}
+  - component: {fileID: 23279166136977183}
+  - component: {fileID: 65071199572913162}
+  - component: {fileID: 54136361572136918}
+  m_Layer: 19
+  m_Name: rear light right
+  m_TagString: PART
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4017185538197932
+Transform:
+  m_GameObject: {fileID: 1265938573011171}
+  m_LocalRotation: {x: -0.03231109, y: 0.6549007, z: 0.7546561, w: 0.02356428}
+  m_LocalPosition: {x: 11.44055, y: 0.8391899, z: 0.4898586}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4189303209876225}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 81.91926, y: -4.567415, z: 179.6117}
+--- !u!33 &33686832372038210
+MeshFilter:
+  m_GameObject: {fileID: 1265938573011171}
+  m_Mesh: {fileID: 4300000, guid: 63a037381ec660143b7e5eded04298e5, type: 2}
+--- !u!23 &23279166136977183
+MeshRenderer:
+  m_GameObject: {fileID: 1265938573011171}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 0088e6185e336534ab3e43614cb03269, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &65071199572913162
+BoxCollider:
+  m_GameObject: {fileID: 1265938573011171}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19186, y: 0.08209103, z: 0.2345301}
+  m_Center: {x: 0.006596908, y: 0.008980457, z: 0.00192206}
+--- !u!54 &54136361572136918
+Rigidbody:
+  m_GameObject: {fileID: 1265938573011171}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!1 &1595731600758039
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4189303209876225}
+  - component: {fileID: 33425085683368086}
+  - component: {fileID: 23867709228710032}
+  m_Layer: 0
+  m_Name: light_rear_lights
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4189303209876225
+Transform:
+  m_GameObject: {fileID: 1595731600758039}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4017185538197932}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33425085683368086
+MeshFilter:
+  m_GameObject: {fileID: 1595731600758039}
+  m_Mesh: {fileID: 4300000, guid: c5e43df134f173141af9ea4158522ccf, type: 2}
+--- !u!23 &23867709228710032
+MeshRenderer:
+  m_GameObject: {fileID: 1595731600758039}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 2d53c6fa9cf57fc4ba7283ebb38877fe, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0

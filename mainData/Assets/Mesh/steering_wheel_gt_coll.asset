@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4300000
+Mesh:
+  m_Name: steering_wheel_gt_coll
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 48
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 10
+    localAABB:
+      m_Center: {x: 0, y: 0.005125999, z: 0.0105175}
+      m_Extent: {x: 0.192319, y: 0.189398, z: 0.0401495}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes:
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200000003000100000004000300040001000300040002000100000005000400040005000200000002000600020005000600000006000700000007000800000008000900000009000500060005000900060009000700070009000800
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 139
+    m_VertexCount: 10
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 32
+      format: 0
+      dimension: 4
+    m_DataSize: 480
+    _typelessdata: 00000000d5ec813bcfbef2bc00000000e981153c46fd7fbf00000000000000000000803f0000000000000000000080bf268a003e3468183e33884f3ddfc3223f3802413ff249293e00000000000000008745dabd186a01be367a7c3f0000803f46ef443e32c6073d33884f3df1e4783f06b22b3efa19273e0000000000000000aeab24beb930e3bc85917c3f000080bf000000004d31473e33884f3d0000000079707c3faa312a3e00000000000000000000803f0000000000000000000080bf268a00be3468183e33884f3ddfc322bf3802413ff249293e00000000000000008745da3d186a01be367a7c3f0000803f46ef44be32c6073d33884f3df1e478bf06b22b3efa19273e0000000000000000aeab243eb930e3bc85917c3f0000803f512e2d3e1689c9bd33884f3d96685a3f0213febef3b1243e00000000000000004b5d0ebebe9ca53dceaa7c3f000080bf3eca883dcdb13cbe33884f3d5846ac3e3b996dbf3822233e0000000000000000c5665ebdc15d193e02bb7c3f000080bf3eca88bdcdb13cbe33884f3d5846acbe3b996dbf3822233e0000000000000000c5665e3dc15d193e02bb7c3f000080bf512e2dbe1689c9bd33884f3d96685abf0213febef3b1243e00000000000000004b5d0e3ebe9ca53dceaa7c3f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.005125999, z: 0.0105175}
+    m_Extent: {x: 0.192319, y: 0.189398, z: 0.0401495}
+  m_MeshUsageFlags: 2
+  m_BakedConvexCollisionMesh:
+  m_BakedTriangleCollisionMesh:
+  m_MeshOptimized: 1

@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1311927710235184}
+  m_IsPrefabParent: 1
+--- !u!1 &1311927710235184
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4705999948574014}
+  - component: {fileID: 33057170053143626}
+  - component: {fileID: 23402028079309630}
+  m_Layer: 0
+  m_Name: TireSlick2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4705999948574014
+Transform:
+  m_GameObject: {fileID: 1311927710235184}
+  m_LocalRotation: {x: 0.7071059, y: 0.7071078, z: -5.960464E-08, w: -1.448991E-08}
+  m_LocalPosition: {x: -14.461, y: -0.26, z: 14.101}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4038650123387739}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -180, y: -3.65557E-06, z: -90.00015}
+--- !u!33 &33057170053143626
+MeshFilter:
+  m_GameObject: {fileID: 1311927710235184}
+  m_Mesh: {fileID: 4300000, guid: ff7d39daa2c2fee478b3ec8a743e8ae9, type: 2}
+--- !u!23 &23402028079309630
+MeshRenderer:
+  m_GameObject: {fileID: 1311927710235184}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 005de13080a74824497a2da10d581b32, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1369083004143803
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4038650123387739}
+  - component: {fileID: 33780527108558848}
+  - component: {fileID: 23790698242125704}
+  m_Layer: 0
+  m_Name: shadowcollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4038650123387739
+Transform:
+  m_GameObject: {fileID: 1369083004143803}
+  m_LocalRotation: {x: -4.440893E-16, y: -1.490116E-08, z: -1.490117E-08, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4705999948574014}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -2.544443E-14, y: 1.707547E-06, z: 1.707549E-06}
+--- !u!33 &33780527108558848
+MeshFilter:
+  m_GameObject: {fileID: 1369083004143803}
+  m_Mesh: {fileID: 4300000, guid: bf76c025288bc424db94a1e1bcc7adbf, type: 2}
+--- !u!23 &23790698242125704
+MeshRenderer:
+  m_GameObject: {fileID: 1369083004143803}
+  m_Enabled: 1
+  m_CastShadows: 3
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ea50376f9d79eea48b5f09291115a61c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0

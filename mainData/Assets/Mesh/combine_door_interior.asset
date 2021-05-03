@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4300000
+Mesh:
+  m_Name: combine_door_interior
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 42
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 14
+    localAABB:
+      m_Center: {x: 1.18468, y: -0.514762, z: 0.627704}
+      m_Extent: {x: 0.3161325, y: 0, z: 0.768072}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes:
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 0000010002000300010000000300000004000500030004000300050006000600050007000600070008000800070009000a00090007000b00020001000b0009000a000b000c0002000d000c000b000b000a000d00
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 139
+    m_VertexCount: 14
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 32
+      format: 0
+      dimension: 4
+    m_DataSize: 672
+    _typelessdata: f277673f71c703bf41d6913f000000000000803f000000008270613f46b2a73e000080bf0000000033a196b80000803f19595e3f71c703bfcaa8b23f000000000000803f00000000fd69633f791ec43e000080bf0000000029cb1bb60000803f6c076f3f71c703bffe9d953f000000000000803f0000000079cd5f3f38f8aa3e000080bf00000000caeba2b60000803f19595e3f71c703bff7ccca3e000000000000803f00000000fd69633f88a02a3e000080bf00000000f3c862b80000803ff277673f71c703bf444dd43e000000000000803f000000008270613f90bd2e3e000080bf0000000075a834b80000803f6c076f3f71c703bf512ec53e000000000000803f0000000079cd5f3f6a31283e000080bf00000000ba62e4b60000803f19595e3f71c703bfa1bc0fbe000000000000803f00000000fd69633fa7cf4e3d000080bf000000009f6d1eb50000803f72c3b73f71c703bf512ec53e000000000000803f0000000011fc433f6a31283e000080bf000000009eefac360000803f9c1ac03f71c703bfa1bc0fbe000000000000803f000000009e5f403fa7cf4e3d000080bf000000007b57f1340000803f9c1ac03f71c703bf6da9cb3e000000000000803f000000009e5f403ff3ff2a3e000080bf00000000b06d26380000803f2f8bbb3f71c703bf444dd43e000000000000803f000000001959423f90bd2e3e000080bf00000000a206eb370000803f9c1ac03f71c703bfcaa8b23f000000000000803f000000009e5f403f791ec43e000080bf00000000ce2d0c360000803f72c3b73f71c703bffe9d953f000000000000803f0000000011fc433f38f8aa3e000080bf000000003eddc1360000803f2f8bbb3f71c703bf41d6913f000000000000803f000000001959423f46b2a73e000080bf00000000f76dab380000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 1.18468, y: -0.514762, z: 0.627704}
+    m_Extent: {x: 0.3161325, y: 0, z: 0.768072}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh:
+  m_BakedTriangleCollisionMesh:
+  m_MeshOptimized: 1

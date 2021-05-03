@@ -1,0 +1,486 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1336121492635295}
+  m_IsPrefabParent: 1
+--- !u!1 &1336121492635295
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4791728191822908}
+  - component: {fileID: 65277354264692737}
+  - component: {fileID: 54010883381107969}
+  m_Layer: 19
+  m_Name: tachometer
+  m_TagString: PART
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4791728191822908
+Transform:
+  m_GameObject: {fileID: 1336121492635295}
+  m_LocalRotation: {x: -0.7071066, y: 2.304047E-07, z: 2.304046E-07, w: 0.7071069}
+  m_LocalPosition: {x: -17.588, y: 1.607, z: 10.885}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4300164430249749}
+  - {fileID: 4636405237606381}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -89.99997, y: -3.733867E-05, z: -2.303734E-13}
+--- !u!65 &65277354264692737
+BoxCollider:
+  m_GameObject: {fileID: 1336121492635295}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.12, y: 0.09, z: 0.1}
+  m_Center: {x: 0.01, y: -0.01, z: 0}
+--- !u!54 &54010883381107969
+Rigidbody:
+  m_GameObject: {fileID: 1336121492635295}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!1 &1108384841418348
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4300164430249749}
+  - component: {fileID: 33619653862880010}
+  - component: {fileID: 23412896689960602}
+  m_Layer: 0
+  m_Name: base
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4300164430249749
+Transform:
+  m_GameObject: {fileID: 1108384841418348}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4791728191822908}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33619653862880010
+MeshFilter:
+  m_GameObject: {fileID: 1108384841418348}
+  m_Mesh: {fileID: 4300000, guid: a8d9a3348debcf042bf6c3224d47b428, type: 2}
+--- !u!23 &23412896689960602
+MeshRenderer:
+  m_GameObject: {fileID: 1108384841418348}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 0088e6185e336534ab3e43614cb03269, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1228012629313776
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4636405237606381}
+  m_Layer: 0
+  m_Name: Pivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4636405237606381
+Transform:
+  m_GameObject: {fileID: 1228012629313776}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.0069, z: -0.059}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4290677909511088}
+  m_Father: {fileID: 4791728191822908}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1794173451563809
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4290677909511088}
+  m_Layer: 0
+  m_Name: GFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4290677909511088
+Transform:
+  m_GameObject: {fileID: 1794173451563809}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.006900298, z: 0.059}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4170167999763369}
+  - {fileID: 4008482559110793}
+  - {fileID: 4684746386884305}
+  - {fileID: 4824635275074658}
+  m_Father: {fileID: 4636405237606381}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1349300278663436
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4170167999763369}
+  m_Layer: 0
+  m_Name: NeedlePivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4170167999763369
+Transform:
+  m_GameObject: {fileID: 1349300278663436}
+  m_LocalRotation: {x: -3.834718E-08, y: 0.2000956, z: -1.332124E-08, w: 0.9797764}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4990303755194909}
+  m_Father: {fileID: 4290677909511088}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -5.012202E-06, y: -23.0851, z: 2.581631E-06}
+--- !u!1 &1867905331463527
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4990303755194909}
+  - component: {fileID: 33230662942804623}
+  - component: {fileID: 23430086748165811}
+  m_Layer: 0
+  m_Name: tachometer_needle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4990303755194909
+Transform:
+  m_GameObject: {fileID: 1867905331463527}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4170167999763369}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33230662942804623
+MeshFilter:
+  m_GameObject: {fileID: 1867905331463527}
+  m_Mesh: {fileID: 4300000, guid: ff90d5902c04d56459db180a19b9aad1, type: 2}
+--- !u!23 &23430086748165811
+MeshRenderer:
+  m_GameObject: {fileID: 1867905331463527}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 86a63f13e336e51479da7e48ca974ab9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1969504529646627
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4008482559110793}
+  - component: {fileID: 33322974705407892}
+  - component: {fileID: 23023575092817997}
+  m_Layer: 0
+  m_Name: tachometer_panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4008482559110793
+Transform:
+  m_GameObject: {fileID: 1969504529646627}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4290677909511088}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33322974705407892
+MeshFilter:
+  m_GameObject: {fileID: 1969504529646627}
+  m_Mesh: {fileID: 4300000, guid: 3389db72bdff99c45a5fd477481074bb, type: 2}
+--- !u!23 &23023575092817997
+MeshRenderer:
+  m_GameObject: {fileID: 1969504529646627}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 86a63f13e336e51479da7e48ca974ab9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1695438598973003
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4684746386884305}
+  - component: {fileID: 33822912305094620}
+  - component: {fileID: 23031059016065113}
+  m_Layer: 0
+  m_Name: tachometer_lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4684746386884305
+Transform:
+  m_GameObject: {fileID: 1695438598973003}
+  m_LocalRotation: {x: -6.233402E-08, y: 0.5200664, z: -8.786014E-08, w: 0.8541259}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4127794657814445}
+  m_Father: {fileID: 4290677909511088}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -2.469607E-05, y: -62.67341, z: 2.682465E-05}
+--- !u!33 &33822912305094620
+MeshFilter:
+  m_GameObject: {fileID: 1695438598973003}
+  m_Mesh: {fileID: 4300000, guid: da0b07083ce658041b6a7d3ac404048b, type: 2}
+--- !u!23 &23031059016065113
+MeshRenderer:
+  m_GameObject: {fileID: 1695438598973003}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 0088e6185e336534ab3e43614cb03269, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1336081403146152
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4127794657814445}
+  - component: {fileID: 33276334831255820}
+  - component: {fileID: 23268851111745435}
+  m_Layer: 0
+  m_Name: tachometer_light_off
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4127794657814445
+Transform:
+  m_GameObject: {fileID: 1336081403146152}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4684746386884305}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33276334831255820
+MeshFilter:
+  m_GameObject: {fileID: 1336081403146152}
+  m_Mesh: {fileID: 4300000, guid: ec129f474e4a1154d9f2bf5a0e3e266d, type: 2}
+--- !u!23 &23268851111745435
+MeshRenderer:
+  m_GameObject: {fileID: 1336081403146152}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 86a63f13e336e51479da7e48ca974ab9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1835892578189502
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4824635275074658}
+  - component: {fileID: 33153773214931335}
+  - component: {fileID: 23241173833670985}
+  m_Layer: 0
+  m_Name: tachometer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4824635275074658
+Transform:
+  m_GameObject: {fileID: 1835892578189502}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4290677909511088}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33153773214931335
+MeshFilter:
+  m_GameObject: {fileID: 1835892578189502}
+  m_Mesh: {fileID: 4300000, guid: 123e5f1c62d0cf044a45199d0e9aad56, type: 2}
+--- !u!23 &23241173833670985
+MeshRenderer:
+  m_GameObject: {fileID: 1835892578189502}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 0088e6185e336534ab3e43614cb03269, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0

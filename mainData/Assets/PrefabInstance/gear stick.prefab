@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1511797781883290}
+  m_IsPrefabParent: 1
+--- !u!1 &1511797781883290
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4165972840475860}
+  - component: {fileID: 33725307110340290}
+  - component: {fileID: 23686417813401045}
+  - component: {fileID: 54439666411005066}
+  - component: {fileID: 65534966590804202}
+  - component: {fileID: 65698284200062216}
+  m_Layer: 19
+  m_Name: gear stick
+  m_TagString: PART
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4165972840475860
+Transform:
+  m_GameObject: {fileID: 1511797781883290}
+  m_LocalRotation: {x: -0.7071069, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.7048339, y: -0.1552871, z: -3.230581}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4745517327785149}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
+--- !u!33 &33725307110340290
+MeshFilter:
+  m_GameObject: {fileID: 1511797781883290}
+  m_Mesh: {fileID: 4300000, guid: 861b1ffad30df044c83ab118aa29c95d, type: 2}
+--- !u!23 &23686417813401045
+MeshRenderer:
+  m_GameObject: {fileID: 1511797781883290}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 0088e6185e336534ab3e43614cb03269, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!54 &54439666411005066
+Rigidbody:
+  m_GameObject: {fileID: 1511797781883290}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!65 &65534966590804202
+BoxCollider:
+  m_GameObject: {fileID: 1511797781883290}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07, y: 0.07, z: 0.09}
+  m_Center: {x: 2.980232E-08, y: 0, z: -0.01}
+--- !u!65 &65698284200062216
+BoxCollider:
+  m_GameObject: {fileID: 1511797781883290}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.03}
+  m_Center: {x: 0, y: -0.11, z: 0.26}
+--- !u!1 &1265088802021672
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4745517327785149}
+  - component: {fileID: 33373596393299149}
+  - component: {fileID: 23227827320354352}
+  m_Layer: 0
+  m_Name: gear_stick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4745517327785149
+Transform:
+  m_GameObject: {fileID: 1265088802021672}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4165972840475860}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33373596393299149
+MeshFilter:
+  m_GameObject: {fileID: 1265088802021672}
+  m_Mesh: {fileID: 4300000, guid: f534f2424396cbe4fbed46c444a916f1, type: 2}
+--- !u!23 &23227827320354352
+MeshRenderer:
+  m_GameObject: {fileID: 1265088802021672}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0088e6185e336534ab3e43614cb03269, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0

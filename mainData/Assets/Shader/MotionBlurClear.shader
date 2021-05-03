@@ -1,0 +1,246 @@
+Shader "Hidden/MotionBlurClear" {
+SubShader { 
+ Pass {
+  ZTest Always
+  ZWrite Off
+  GpuProgramID 1179
+Program "vp" {
+SubProgram "opengl " {
+"!!GLSL
+#ifdef VERTEX
+uniform vec4 _ProjectionParams;
+
+
+varying vec4 xlv_TEXCOORD0;
+void main ()
+{
+  vec4 tmpvar_1;
+  vec4 tmpvar_2;
+  tmpvar_2 = (gl_ModelViewProjectionMatrix * gl_Vertex);
+  vec4 o_3;
+  vec4 tmpvar_4;
+  tmpvar_4 = (tmpvar_2 * 0.5);
+  vec2 tmpvar_5;
+  tmpvar_5.x = tmpvar_4.x;
+  tmpvar_5.y = (tmpvar_4.y * _ProjectionParams.x);
+  o_3.xy = (tmpvar_5 + tmpvar_4.w);
+  o_3.zw = tmpvar_2.zw;
+  tmpvar_1.xyw = o_3.xyw;
+  tmpvar_1.z = -((gl_ModelViewMatrix * gl_Vertex).z);
+  gl_Position = tmpvar_2;
+  xlv_TEXCOORD0 = tmpvar_1;
+}
+
+
+#endif
+#ifdef FRAGMENT
+uniform vec4 _ZBufferParams;
+uniform sampler2D _CameraDepthTexture;
+varying vec4 xlv_TEXCOORD0;
+void main ()
+{
+  float x_1;
+  x_1 = (((1.0/(
+    ((_ZBufferParams.z * texture2DProj (_CameraDepthTexture, xlv_TEXCOORD0).x) + _ZBufferParams.w)
+  )) - xlv_TEXCOORD0.z) + 0.01);
+  if ((x_1 < 0.0)) {
+    discard;
+  };
+  gl_FragData[0] = vec4(0.0, 0.0, 0.0, 0.0);
+}
+
+
+#endif
+"
+}
+SubProgram "d3d9 " {
+Bind "vertex" Vertex
+Matrix 4 [glstate_matrix_modelview0] 3
+Matrix 0 [glstate_matrix_mvp]
+Vector 7 [_ProjectionParams]
+Vector 8 [_ScreenParams]
+"vs_2_0
+def c9, 0.5, 0, 0, 0
+dcl_position v0
+dp4 oPos.z, c2, v0
+dp4 r0.y, c1, v0
+mul r0.z, r0.y, c7.x
+dp4 r0.x, c0, v0
+dp4 r0.w, c3, v0
+mul r1.xzw, r0.xywz, c9.x
+mov oPos.xyw, r0
+mov oT0.w, r0.w
+mad oT0.xy, r1.z, c8.zwzw, r1.xwzw
+dp4 r0.x, c6, v0
+mov oT0.z, -r0.x
+
+"
+}
+SubProgram "d3d11 " {
+Bind "vertex" Vertex
+ConstBuffer "UnityPerCamera" 144
+Vector 80 [_ProjectionParams]
+ConstBuffer "UnityPerDraw" 336
+Matrix 0 [glstate_matrix_mvp]
+Matrix 64 [glstate_matrix_modelview0]
+BindCB  "UnityPerCamera" 0
+BindCB  "UnityPerDraw" 1
+"vs_4_0
+eefiecedclhkadiememnmnhpijcffnhaochekpjlabaaaaaapaacaaaaadaaaaaa
+cmaaaaaagaaaaaaaliaaaaaaejfdeheocmaaaaaaabaaaaaaaiaaaaaacaaaaaaa
+aaaaaaaaaaaaaaaaadaaaaaaaaaaaaaaapapaaaafaepfdejfeejepeoaaklklkl
+epfdeheofaaaaaaaacaaaaaaaiaaaaaadiaaaaaaaaaaaaaaabaaaaaaadaaaaaa
+aaaaaaaaapaaaaaaeeaaaaaaaaaaaaaaaaaaaaaaadaaaaaaabaaaaaaapaaaaaa
+fdfgfpfaepfdejfeejepeoaafeeffiedepepfceeaaklklklfdeieefcdaacaaaa
+eaaaabaaimaaaaaafjaaaaaeegiocaaaaaaaaaaaagaaaaaafjaaaaaeegiocaaa
+abaaaaaaaiaaaaaafpaaaaadpcbabaaaaaaaaaaaghaaaaaepccabaaaaaaaaaaa
+abaaaaaagfaaaaadpccabaaaabaaaaaagiaaaaacacaaaaaadiaaaaaipcaabaaa
+aaaaaaaafgbfbaaaaaaaaaaaegiocaaaabaaaaaaabaaaaaadcaaaaakpcaabaaa
+aaaaaaaaegiocaaaabaaaaaaaaaaaaaaagbabaaaaaaaaaaaegaobaaaaaaaaaaa
+dcaaaaakpcaabaaaaaaaaaaaegiocaaaabaaaaaaacaaaaaakgbkbaaaaaaaaaaa
+egaobaaaaaaaaaaadcaaaaakpcaabaaaaaaaaaaaegiocaaaabaaaaaaadaaaaaa
+pgbpbaaaaaaaaaaaegaobaaaaaaaaaaadgaaaaafpccabaaaaaaaaaaaegaobaaa
+aaaaaaaadiaaaaaiccaabaaaaaaaaaaabkaabaaaaaaaaaaaakiacaaaaaaaaaaa
+afaaaaaadiaaaaakncaabaaaabaaaaaaagahbaaaaaaaaaaaaceaaaaaaaaaaadp
+aaaaaaaaaaaaaadpaaaaaadpdgaaaaaficcabaaaabaaaaaadkaabaaaaaaaaaaa
+aaaaaaahdccabaaaabaaaaaakgakbaaaabaaaaaamgaabaaaabaaaaaadiaaaaai
+bcaabaaaaaaaaaaabkbabaaaaaaaaaaackiacaaaabaaaaaaafaaaaaadcaaaaak
+bcaabaaaaaaaaaaackiacaaaabaaaaaaaeaaaaaaakbabaaaaaaaaaaaakaabaaa
+aaaaaaaadcaaaaakbcaabaaaaaaaaaaackiacaaaabaaaaaaagaaaaaackbabaaa
+aaaaaaaaakaabaaaaaaaaaaadcaaaaakbcaabaaaaaaaaaaackiacaaaabaaaaaa
+ahaaaaaadkbabaaaaaaaaaaaakaabaaaaaaaaaaadgaaaaageccabaaaabaaaaaa
+akaabaiaebaaaaaaaaaaaaaadoaaaaab"
+}
+SubProgram "d3d11_9x " {
+Bind "vertex" Vertex
+ConstBuffer "UnityPerCamera" 144
+Vector 80 [_ProjectionParams]
+ConstBuffer "UnityPerDraw" 336
+Matrix 0 [glstate_matrix_mvp]
+Matrix 64 [glstate_matrix_modelview0]
+BindCB  "UnityPerCamera" 0
+BindCB  "UnityPerDraw" 1
+"vs_4_0_level_9_1
+eefieceddomfdgfalecfjbnlofjhjcjbdpbcnimlabaaaaaahiaeaaaaaeaaaaaa
+daaaaaaaleabaaaaomadaaaacaaeaaaaebgpgodjhmabaaaahmabaaaaaaacpopp
+dmabaaaaeaaaaaaaacaaceaaaaaadmaaaaaadmaaaaaaceaaabaadmaaaaaaafaa
+abaaabaaaaaaaaaaabaaaaaaaiaaacaaaaaaaaaaaaaaaaaaaaacpoppfbaaaaaf
+akaaapkaaaaaaadpaaaaaaaaaaaaaaaaaaaaaaaabpaaaaacafaaaaiaaaaaapja
+afaaaaadaaaaapiaaaaaffjaadaaoekaaeaaaaaeaaaaapiaacaaoekaaaaaaaja
+aaaaoeiaaeaaaaaeaaaaapiaaeaaoekaaaaakkjaaaaaoeiaaeaaaaaeaaaaapia
+afaaoekaaaaappjaaaaaoeiaafaaaaadabaaabiaaaaaffiaabaaaakaafaaaaad
+abaaaiiaabaaaaiaakaaaakaafaaaaadabaaafiaaaaapeiaakaaaakaacaaaaad
+aaaaadoaabaakkiaabaaomiaafaaaaadabaaabiaaaaaffjaahaakkkaaeaaaaae
+abaaabiaagaakkkaaaaaaajaabaaaaiaaeaaaaaeabaaabiaaiaakkkaaaaakkja
+abaaaaiaaeaaaaaeabaaabiaajaakkkaaaaappjaabaaaaiaabaaaaacaaaaaeoa
+abaaaaibaeaaaaaeaaaaadmaaaaappiaaaaaoekaaaaaoeiaabaaaaacaaaaamma
+aaaaoeiaabaaaaacaaaaaioaaaaappiappppaaaafdeieefcdaacaaaaeaaaabaa
+imaaaaaafjaaaaaeegiocaaaaaaaaaaaagaaaaaafjaaaaaeegiocaaaabaaaaaa
+aiaaaaaafpaaaaadpcbabaaaaaaaaaaaghaaaaaepccabaaaaaaaaaaaabaaaaaa
+gfaaaaadpccabaaaabaaaaaagiaaaaacacaaaaaadiaaaaaipcaabaaaaaaaaaaa
+fgbfbaaaaaaaaaaaegiocaaaabaaaaaaabaaaaaadcaaaaakpcaabaaaaaaaaaaa
+egiocaaaabaaaaaaaaaaaaaaagbabaaaaaaaaaaaegaobaaaaaaaaaaadcaaaaak
+pcaabaaaaaaaaaaaegiocaaaabaaaaaaacaaaaaakgbkbaaaaaaaaaaaegaobaaa
+aaaaaaaadcaaaaakpcaabaaaaaaaaaaaegiocaaaabaaaaaaadaaaaaapgbpbaaa
+aaaaaaaaegaobaaaaaaaaaaadgaaaaafpccabaaaaaaaaaaaegaobaaaaaaaaaaa
+diaaaaaiccaabaaaaaaaaaaabkaabaaaaaaaaaaaakiacaaaaaaaaaaaafaaaaaa
+diaaaaakncaabaaaabaaaaaaagahbaaaaaaaaaaaaceaaaaaaaaaaadpaaaaaaaa
+aaaaaadpaaaaaadpdgaaaaaficcabaaaabaaaaaadkaabaaaaaaaaaaaaaaaaaah
+dccabaaaabaaaaaakgakbaaaabaaaaaamgaabaaaabaaaaaadiaaaaaibcaabaaa
+aaaaaaaabkbabaaaaaaaaaaackiacaaaabaaaaaaafaaaaaadcaaaaakbcaabaaa
+aaaaaaaackiacaaaabaaaaaaaeaaaaaaakbabaaaaaaaaaaaakaabaaaaaaaaaaa
+dcaaaaakbcaabaaaaaaaaaaackiacaaaabaaaaaaagaaaaaackbabaaaaaaaaaaa
+akaabaaaaaaaaaaadcaaaaakbcaabaaaaaaaaaaackiacaaaabaaaaaaahaaaaaa
+dkbabaaaaaaaaaaaakaabaaaaaaaaaaadgaaaaageccabaaaabaaaaaaakaabaia
+ebaaaaaaaaaaaaaadoaaaaabejfdeheocmaaaaaaabaaaaaaaiaaaaaacaaaaaaa
+aaaaaaaaaaaaaaaaadaaaaaaaaaaaaaaapapaaaafaepfdejfeejepeoaaklklkl
+epfdeheofaaaaaaaacaaaaaaaiaaaaaadiaaaaaaaaaaaaaaabaaaaaaadaaaaaa
+aaaaaaaaapaaaaaaeeaaaaaaaaaaaaaaaaaaaaaaadaaaaaaabaaaaaaapaaaaaa
+fdfgfpfaepfdejfeejepeoaafeeffiedepepfceeaaklklkl"
+}
+}
+Program "fp" {
+SubProgram "opengl " {
+"!!GLSL"
+}
+SubProgram "d3d9 " {
+Vector 0 [_ZBufferParams]
+SetTexture 0 [_CameraDepthTexture] 2D 0
+"ps_2_0
+def c1, 0.00999999978, 0, 0, 0
+dcl t0
+dcl_2d s0
+texldp r0, t0, s0
+mad r0.x, c0.z, r0.x, c0.w
+rcp r0.x, r0.x
+add r0.x, r0.x, -t0.z
+add r0, r0.x, c1.x
+texkill r0
+mov r0, c1.y
+mov oC0, r0
+
+"
+}
+SubProgram "d3d11 " {
+SetTexture 0 [_CameraDepthTexture] 2D 0
+ConstBuffer "UnityPerCamera" 144
+Vector 112 [_ZBufferParams]
+BindCB  "UnityPerCamera" 0
+"ps_4_0
+eefiecedpemgaocnenajmmnicljadepljddkcebaabaaaaaadaacaaaaadaaaaaa
+cmaaaaaaieaaaaaaliaaaaaaejfdeheofaaaaaaaacaaaaaaaiaaaaaadiaaaaaa
+aaaaaaaaabaaaaaaadaaaaaaaaaaaaaaapaaaaaaeeaaaaaaaaaaaaaaaaaaaaaa
+adaaaaaaabaaaaaaapapaaaafdfgfpfaepfdejfeejepeoaafeeffiedepepfcee
+aaklklklepfdeheocmaaaaaaabaaaaaaaiaaaaaacaaaaaaaaaaaaaaaaaaaaaaa
+adaaaaaaaaaaaaaaapaaaaaafdfgfpfegbhcghgfheaaklklfdeieefchaabaaaa
+eaaaaaaafmaaaaaafjaaaaaeegiocaaaaaaaaaaaaiaaaaaafkaaaaadaagabaaa
+aaaaaaaafibiaaaeaahabaaaaaaaaaaaffffaaaagcbaaaadpcbabaaaabaaaaaa
+gfaaaaadpccabaaaaaaaaaaagiaaaaacabaaaaaaaoaaaaahdcaabaaaaaaaaaaa
+egbabaaaabaaaaaapgbpbaaaabaaaaaaefaaaaajpcaabaaaaaaaaaaaegaabaaa
+aaaaaaaaeghobaaaaaaaaaaaaagabaaaaaaaaaaadcaaaaalbcaabaaaaaaaaaaa
+ckiacaaaaaaaaaaaahaaaaaaakaabaaaaaaaaaaadkiacaaaaaaaaaaaahaaaaaa
+aoaaaaakbcaabaaaaaaaaaaaaceaaaaaaaaaiadpaaaaiadpaaaaiadpaaaaiadp
+akaabaaaaaaaaaaaaaaaaaaibcaabaaaaaaaaaaaakaabaaaaaaaaaaackbabaia
+ebaaaaaaabaaaaaaaaaaaaahbcaabaaaaaaaaaaaakaabaaaaaaaaaaaabeaaaaa
+aknhcddmdbaaaaahbcaabaaaaaaaaaaaakaabaaaaaaaaaaaabeaaaaaaaaaaaaa
+anaaaeadakaabaaaaaaaaaaadgaaaaaipccabaaaaaaaaaaaaceaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaadoaaaaab"
+}
+SubProgram "d3d11_9x " {
+SetTexture 0 [_CameraDepthTexture] 2D 0
+ConstBuffer "UnityPerCamera" 144
+Vector 112 [_ZBufferParams]
+BindCB  "UnityPerCamera" 0
+"ps_4_0_level_9_1
+eefiecedgepjnfbkaehenapbbnaecipjokkjhnhhabaaaaaadeadaaaaaeaaaaaa
+daaaaaaadaabaaaakiacaaaaaaadaaaaebgpgodjpiaaaaaapiaaaaaaaaacpppp
+meaaaaaadeaaaaaaabaaciaaaaaadeaaaaaadeaaabaaceaaaaaadeaaaaaaaaaa
+aaaaahaaabaaaaaaaaaaaaaaaaacppppfbaaaaafabaaapkaaknhcddmaaaaaaaa
+aaaaaaaaaaaaaaaabpaaaaacaaaaaaiaaaaaaplabpaaaaacaaaaaajaaaaiapka
+agaaaaacaaaaaiiaaaaapplaafaaaaadaaaaadiaaaaappiaaaaaoelaecaaaaad
+aaaaapiaaaaaoeiaaaaioekaaeaaaaaeaaaaabiaaaaakkkaaaaaaaiaaaaappka
+agaaaaacaaaaabiaaaaaaaiaacaaaaadaaaaabiaaaaaaaiaaaaakklbacaaaaad
+aaaaapiaaaaaaaiaabaaaakaebaaaaabaaaaapiaabaaaaacaaaaapiaabaaffka
+abaaaaacaaaiapiaaaaaoeiappppaaaafdeieefchaabaaaaeaaaaaaafmaaaaaa
+fjaaaaaeegiocaaaaaaaaaaaaiaaaaaafkaaaaadaagabaaaaaaaaaaafibiaaae
+aahabaaaaaaaaaaaffffaaaagcbaaaadpcbabaaaabaaaaaagfaaaaadpccabaaa
+aaaaaaaagiaaaaacabaaaaaaaoaaaaahdcaabaaaaaaaaaaaegbabaaaabaaaaaa
+pgbpbaaaabaaaaaaefaaaaajpcaabaaaaaaaaaaaegaabaaaaaaaaaaaeghobaaa
+aaaaaaaaaagabaaaaaaaaaaadcaaaaalbcaabaaaaaaaaaaackiacaaaaaaaaaaa
+ahaaaaaaakaabaaaaaaaaaaadkiacaaaaaaaaaaaahaaaaaaaoaaaaakbcaabaaa
+aaaaaaaaaceaaaaaaaaaiadpaaaaiadpaaaaiadpaaaaiadpakaabaaaaaaaaaaa
+aaaaaaaibcaabaaaaaaaaaaaakaabaaaaaaaaaaackbabaiaebaaaaaaabaaaaaa
+aaaaaaahbcaabaaaaaaaaaaaakaabaaaaaaaaaaaabeaaaaaaknhcddmdbaaaaah
+bcaabaaaaaaaaaaaakaabaaaaaaaaaaaabeaaaaaaaaaaaaaanaaaeadakaabaaa
+aaaaaaaadgaaaaaipccabaaaaaaaaaaaaceaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaadoaaaaabejfdeheofaaaaaaaacaaaaaaaiaaaaaadiaaaaaaaaaaaaaa
+abaaaaaaadaaaaaaaaaaaaaaapaaaaaaeeaaaaaaaaaaaaaaaaaaaaaaadaaaaaa
+abaaaaaaapapaaaafdfgfpfaepfdejfeejepeoaafeeffiedepepfceeaaklklkl
+epfdeheocmaaaaaaabaaaaaaaiaaaaaacaaaaaaaaaaaaaaaaaaaaaaaadaaaaaa
+aaaaaaaaapaaaaaafdfgfpfegbhcghgfheaaklkl"
+}
+}
+ }
+}
+Fallback Off
+}

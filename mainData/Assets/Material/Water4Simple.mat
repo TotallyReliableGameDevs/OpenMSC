@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_Name: Water4Simple
+  m_Shader: {fileID: 4800000, guid: 7731c3395dfd25640ae360bcf149b333, type: 3}
+  m_ShaderKeywords:
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: d018125c39d77c14093a05d2aaa623ea, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Shininess: 349.1379
+    - _FresnelScale: 0.3897143
+    - _GerstnerIntensity: 1
+    - _HeightDisplacement: 2.337032
+    - _NormalsDisplacement: 72.72728
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecularColor: {r: 0.8208956, g: 0.8058159, b: 0.7718869, a: 1}
+    - _DistortParams: {r: 1.028571, g: 0.2018722, b: 2.766625, a: -0.4171428}
+    - _InvFadeParemeter: {r: 0.2750813, g: 0.08562102, b: 0.09414239, a: 0.48031}
+    - _AnimationTiling: {r: 0.4, g: 0.391, b: 0.56, a: 0.7}
+    - _AnimationDirection: {r: 2, g: 1, b: -1, a: 1}
+    - _BumpTiling: {r: 0.04, g: 0.04, b: 0.04, a: 0.08}
+    - _BumpDirection: {r: 1, g: 30, b: 20, a: -20}
+    - _BaseColor: {r: 0.1727556, g: 0.224076, b: 0.2462686, a: 0.5058824}
+    - _ReflectionColor: {r: 0.4758298, g: 0.6064865, b: 0.6641791, a: 0.4705882}
+    - _WorldLightDir: {r: 0.4860636, g: -0.8660256, b: -0.1172254, a: 0}
+    - _Foam: {r: 0.3275862, g: 0.7471264, b: 0, a: 0}
+    - _GAmplitude: {r: 0.3, g: 0.2, b: 0.25, a: 0.25}
+    - _GFrequency: {r: 0.5, g: 0.25, b: 0.6, a: 0.245}
+    - _GSteepness: {r: 3.030131, g: 1, b: 1, a: 1}
+    - _GSpeed: {r: 4, g: 2, b: 1, a: 1}
+    - _GDirectionAB: {r: 0.85, g: 0.3, b: 0.25, a: 0.25}
+    - _GDirectionCD: {r: -0.3, g: -0.9, b: 0.5, a: 0.5}
+    - _DepthColor: {r: 0.2981176, g: 0.3661172, b: 0.3955224, a: 0.345098}
+    - _RefractionFog: {r: 0.8681778, g: 0.8797176, b: 0.8880597, a: 1}

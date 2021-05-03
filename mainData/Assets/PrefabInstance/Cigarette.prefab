@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1645430892298673}
+  m_IsPrefabParent: 1
+--- !u!1 &1645430892298673
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4325712511567392}
+  m_Layer: 0
+  m_Name: Cigarette
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4325712511567392
+Transform:
+  m_GameObject: {fileID: 1645430892298673}
+  m_LocalRotation: {x: -0.6330535, y: 0.08716673, z: -0.1064422, w: 0.7617843}
+  m_LocalPosition: {x: -0.0565, y: 0.1267, z: 0.0259}
+  m_LocalScale: {x: 0.8099995, y: 0.8099999, z: 0.9719994}
+  m_Children:
+  - {fileID: 4646797663722294}
+  - {fileID: 4912490619729850}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -79.4385, y: 0.1124562, z: 15.81516}
+--- !u!1 &1678637349669667
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4646797663722294}
+  - component: {fileID: 33788549668006350}
+  - component: {fileID: 23486515049280959}
+  m_Layer: 0
+  m_Name: Shaft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4646797663722294
+Transform:
+  m_GameObject: {fileID: 1678637349669667}
+  m_LocalRotation: {x: -1.490116E-08, y: -5.215406E-08, z: 2.980232E-08, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0.6}
+  m_Children: []
+  m_Father: {fileID: 4325712511567392}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -1.707547E-06, y: 5.976415E-06, z: -3.415094E-06}
+--- !u!33 &33788549668006350
+MeshFilter:
+  m_GameObject: {fileID: 1678637349669667}
+  m_Mesh: {fileID: 4300000, guid: 0a52480b454723741b4211a661881586, type: 2}
+--- !u!23 &23486515049280959
+MeshRenderer:
+  m_GameObject: {fileID: 1678637349669667}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d11e074a9420b47499c7ef54b4d1b05f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1351922801845311
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4912490619729850}
+  - component: {fileID: 33124176594955682}
+  - component: {fileID: 23107771013175956}
+  m_Layer: 0
+  m_Name: Filter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4912490619729850
+Transform:
+  m_GameObject: {fileID: 1351922801845311}
+  m_LocalRotation: {x: 5.215406E-08, y: -2.980232E-08, z: 2.980232E-08, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4325712511567392}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 5.976415E-06, y: 3.415094E-06, z: -3.415094E-06}
+--- !u!33 &33124176594955682
+MeshFilter:
+  m_GameObject: {fileID: 1351922801845311}
+  m_Mesh: {fileID: 4300000, guid: cb655f3bd5818a040b8981dfafac6f56, type: 2}
+--- !u!23 &23107771013175956
+MeshRenderer:
+  m_GameObject: {fileID: 1351922801845311}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d11e074a9420b47499c7ef54b4d1b05f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0

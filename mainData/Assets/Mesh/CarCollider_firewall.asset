@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4300000
+Mesh:
+  m_Name: CarCollider_firewall
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 9
+    localAABB:
+      m_Center: {x: 0, y: 0.8433115, z: 0.619037}
+      m_Extent: {x: 0.515164, y: 0.1285305, z: 0.336345}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes:
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200000003000100040000000200040002000500060000000400060003000000060004000700060008000300
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 139
+    m_VertexCount: 9
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 32
+      format: 0
+      dimension: 4
+    m_DataSize: 432
+    _typelessdata: 00000000a3ca783f909f6d3f000000002895493f79cc1d3f00000000000000000000803f0000000000000000000080bf3d2bd1be0cc86a3f01bd903e8c022ebdbd577f3f75236cbd0000000000000000d5c47f3f53b82d3d94a720bb000080bfcae103bf1e6f6e3ff227663fbe6263bd53c8403f06d6273f0000000000000000f09a7f3fb17f2b3d754e153d000080bf000000006d396b3ff7cc9a3e00000000c7927f3f92626cbd00000000000000000000803f0000000000000000000080bf0000000087503d3fea93743f00000000392a373e0fdf7b3f00000000000000000000803f00000000000000000000803f9dd403bfe3fb363f7e19743f0ba227bd3b02373e12a97b3f000000000000000017c97f3f0be0ef3bf7ed243d0000803fcae1033f1e6f6e3ff227663fbe62633d53c8403f06d6273f0000000000000000f09a7f3fb17f2bbd754e15bd000080bf9dd4033fe3fb363f7e19743f0ba2273d3b02373e12a97b3f000000000000000017c97f3f0be0efbbf7ed24bd0000803f3d2bd13e0cc86a3f01bd903e8c022e3dbd577f3f75236cbd0000000000000000d5c47f3f53b82dbd94a7203b000080bf
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.8433115, z: 0.619037}
+    m_Extent: {x: 0.515164, y: 0.1285305, z: 0.336345}
+  m_MeshUsageFlags: 2
+  m_BakedConvexCollisionMesh:
+  m_BakedTriangleCollisionMesh:
+  m_MeshOptimized: 1

@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1227830984376456}
+  m_IsPrefabParent: 1
+--- !u!1 &1227830984376456
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4672472356010366}
+  - component: {fileID: 33963025115245155}
+  - component: {fileID: 23661431802698145}
+  - component: {fileID: 54453057088261615}
+  - component: {fileID: 64386671216085437}
+  m_Layer: 19
+  m_Name: steering rod fl
+  m_TagString: PART
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4672472356010366
+Transform:
+  m_GameObject: {fileID: 1227830984376456}
+  m_LocalRotation: {x: -0.3709631, y: -0.6019852, z: -0.6019851, w: 0.3709638}
+  m_LocalPosition: {x: -3.501739, y: 0.1011581, z: 0.4130937}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 89.99995, y: 63.28554, z: 179.9999}
+--- !u!33 &33963025115245155
+MeshFilter:
+  m_GameObject: {fileID: 1227830984376456}
+  m_Mesh: {fileID: 4300000, guid: 80c636f6e1c5e38469b8ed6977ab1894, type: 2}
+--- !u!23 &23661431802698145
+MeshRenderer:
+  m_GameObject: {fileID: 1227830984376456}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5076a2edb3cbe3b4380aa67b8f85cce1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!54 &54453057088261615
+Rigidbody:
+  m_GameObject: {fileID: 1227830984376456}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!64 &64386671216085437
+MeshCollider:
+  m_GameObject: {fileID: 1227830984376456}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 80c636f6e1c5e38469b8ed6977ab1894, type: 2}

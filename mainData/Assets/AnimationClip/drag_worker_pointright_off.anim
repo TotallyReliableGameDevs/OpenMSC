@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_Name: drag_worker_pointright_off
+  serializedVersion: 6
+  m_Legacy: 1
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.5492945, y: -0.0832698, z: 0.1248598, w: 0.8220412}
+        inSlope: {x: -3.65231, y: -0.9890516, z: 0.06356254, w: 2.139094}
+        outSlope: {x: -3.65231, y: -0.9890516, z: 0.06356254, w: 2.139094}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.01666667
+        value: {x: 0.4884227, y: -0.09975399, z: 0.1259191, w: 0.8576927}
+        inSlope: {x: -3.704013, y: -1.190189, z: -0.1941651, w: 1.995594}
+        outSlope: {x: -3.704013, y: -1.190189, z: -0.1941651, w: 1.995594}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.03333334
+        value: {x: 0.4258274, y: -0.1229428, z: 0.1183876, w: 0.888561}
+        inSlope: {x: -3.770583, y: -1.579133, z: -0.704331, w: 1.67787}
+        outSlope: {x: -3.770583, y: -1.579133, z: -0.704331, w: 1.67787}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.05
+        value: {x: 0.3627366, y: -0.1523918, z: 0.1024414, w: 0.9136217}
+        inSlope: {x: -3.764703, y: -1.936749, z: -1.198757, w: 1.301013}
+        outSlope: {x: -3.764703, y: -1.936749, z: -1.198757, w: 1.301013}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.06666667
+        value: {x: 0.3003373, y: -0.1875011, z: 0.07842903, w: 0.931928}
+        inSlope: {x: -3.689544, y: -2.254047, z: -1.667398, w: 0.8703018}
+        outSlope: {x: -3.689544, y: -2.254047, z: -1.667398, w: 0.8703018}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.08333334
+        value: {x: 0.2397518, y: -0.2275267, z: 0.04686151, w: 0.9426318}
+        inSlope: {x: -3.549684, y: -2.522835, z: -2.100879, w: 0.3923339}
+        outSlope: {x: -3.549684, y: -2.522835, z: -2.100879, w: 0.3923339}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.1
+        value: {x: 0.1820145, y: -0.2715955, z: 0.008399729, w: 0.9450058}
+        inSlope: {x: -3.351009, y: -2.735909, z: -2.490696, w: -0.1251}
+        outSlope: {x: -3.351009, y: -2.735909, z: -2.490696, w: -0.1251}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.1166667
+        value: {x: 0.1280515, y: -0.3187236, z: -0.03616169, w: 0.9384618}
+        inSlope: {x: -3.10056, y: -2.887222, z: -2.829388, w: -0.6732039}
+        outSlope: {x: -3.10056, y: -2.887222, z: -2.829388, w: -0.6732039}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.1333333
+        value: {x: 0.0786625, y: -0.3678363, z: -0.08591321, w: 0.9225657}
+        inSlope: {x: -2.806361, y: -2.972031, z: -3.110694, w: -1.242308}
+        outSlope: {x: -2.806361, y: -2.972031, z: -3.110694, w: -1.242308}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.15
+        value: {x: 0.03450613, y: -0.4177913, z: -0.1398515, w: 0.8970515}
+        inSlope: {x: -2.477229, y: -2.987009, z: -3.329693, w: -1.822121}
+        outSlope: {x: -2.477229, y: -2.987009, z: -3.329693, w: -1.822121}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.1666667
+        value: {x: -0.003911778, y: -0.4674033, z: -0.196903, w: 0.8618283}
+        inSlope: {x: -2.305075, y: -2.976716, z: -3.423087, w: -2.113391}
+        outSlope: {x: -2.305075, y: -2.976716, z: -3.423087, w: -2.113391}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    path: shoulder_right
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings: []
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 1
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
+  m_Events: []

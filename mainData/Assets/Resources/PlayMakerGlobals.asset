@@ -1,0 +1,1244 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8fe068e379738e44816b10fe7ec2002, type: 3}
+  m_Name: PlayMakerGlobals
+  m_EditorClassIdentifier:
+  variables:
+    floatVariables:
+    - useVariable: 1
+      name: AmbientTemperature
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 24
+    - useVariable: 1
+      name: BoltScrewDistance
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: BoltingSpeed
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0.1
+    - useVariable: 1
+      name: CarMass
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 400
+    - useVariable: 1
+      name: ClockHours
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: ClockMinutes
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: ClutchWear
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: DeathPhysicsForce
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 300
+    - useVariable: 1
+      name: EngineFriction
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0.25
+    - useVariable: 1
+      name: EngineMinRPM
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 680
+    - useVariable: 1
+      name: EnginePower
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 53
+    - useVariable: 1
+      name: EnginePowerMultiplier
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: EnginePowerPerCylinder
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 13.25
+    - useVariable: 1
+      name: EngineTemp
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 25
+    - useVariable: 1
+      name: EngineTorqPerCylinder
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 20.25
+    - useVariable: 1
+      name: EngineTorque
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 81
+    - useVariable: 1
+      name: EngineTorqueRPM
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 4000
+    - useVariable: 1
+      name: Fuel
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: GameVolume
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: GlobalTime
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: HouseElectricityKWH
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: InitateWait
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 3
+    - useVariable: 1
+      name: MotorMass
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: OptionsClutchSensitivity
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0.95
+    - useVariable: 1
+      name: OptionsFFBMultiplier
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 100
+    - useVariable: 1
+      name: OptionsSteeringRotAngle
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 450
+    - useVariable: 1
+      name: ParentingInterval
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0.03
+    - useVariable: 1
+      name: PartsAssemblyTolerance
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0.1
+    - useVariable: 1
+      name: PlayerAllergy
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerBerryPickSkill
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: PlayerBurns
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerDirtiness
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerDrunk
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerDrunkAdjusted
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerFatigue
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerFatigueRate
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0.98
+    - useVariable: 1
+      name: PlayerFines
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerFinesDay
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerHunger
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerID
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerMoney
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 3000
+    - useVariable: 1
+      name: PlayerMovementSpeed
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 2
+    - useVariable: 1
+      name: PlayerNetIncome
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerRaycastDistance
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: PlayerStress
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerStressRate
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 1.1
+    - useVariable: 1
+      name: PlayerThirst
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerUrine
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerWeight
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 83
+    - useVariable: 1
+      name: RPM
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: RPMvalmet
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: RPMvan
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: RadioChannel1SongTime
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: RadioFolkSongTime
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: RainClipDistance
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: RainIntensity
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: SettingsDrawDistance
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 3000
+    - useVariable: 1
+      name: SettingsFOV
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 60
+    - useVariable: 1
+      name: SetupEventDelay
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: SoundAmbienceIn
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: SoundAmbienceMaxVol
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0.8
+    - useVariable: 1
+      name: SoundAmbienceOff
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: -8
+    - useVariable: 1
+      name: SoundAmbienceVolume
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0.8
+    - useVariable: 1
+      name: SpeedKMH
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: SpeedValmet
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: TimeRotationHour
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: TimeRotationMinute
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: ToolWrenchSize
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    intVariables:
+    - useVariable: 1
+      name: GlobalDay
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: OptionsFFBClamp
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 20
+    - useVariable: 1
+      name: OptionsFFBFactor
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: OptionsRenderer
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerCigarettes
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerCopChecksum
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 6243374
+    - useVariable: 1
+      name: PlayerKeyFerndale
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerKeyGifu
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerKeyHayosiko
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerKeyHome
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerKeyRuscko
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerKeySatsuma
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: SongDatabaseCDTracks
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    boolVariables:
+    - useVariable: 1
+      name: AudioSwear
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: GUIassemble
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: GUIbuy
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: GUIdisassemble
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: GUIdrive
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: GUIpassenger
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: GUIuse
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: HouseBurning
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: HouseElectricity
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: InterfaceMute
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: OptionsAutoClutch
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: OptionsFFB
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: OptionsFFBInverted
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: OptionsFPSCounter
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: OptionsPartNames
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: OptionsPermaDeath
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: OptionsShifter
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: OptionsShifterButton
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: OptionsSteeringAid
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerCarControl
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerComputer
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerDrinkOn
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerHandLeft
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerHandRight
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerHasRatchet
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerHelmet
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerInMenu
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerMuscleControl
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerPermaDeath
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: PlayerSeatbeltsOn
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerSeated
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerSleeps
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerStop
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerVanControl
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerWanted
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: RallyDay
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: RallyPlayerOnStage
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: RallyTV
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: SongImported
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    stringVariables:
+    - useVariable: 1
+      name: GUIgear
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value:
+    - useVariable: 1
+      name: GUIinteraction
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value:
+    - useVariable: 1
+      name: GUIsubtitle
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value:
+    - useVariable: 1
+      name: GameStartDate
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 01.01.1995
+    - useVariable: 1
+      name: LeaderboardTimeMode
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: '{2:D2}:{3:D2}:{10}'
+    - useVariable: 1
+      name: PickedPart
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value:
+    - useVariable: 1
+      name: PlayerBBSHandle
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: Peelo
+    - useVariable: 1
+      name: PlayerCurrentVehicle
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value:
+    - useVariable: 1
+      name: PlayerFirstName
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: Firstname
+    - useVariable: 1
+      name: PlayerLastName
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: Lastname
+    - useVariable: 1
+      name: PlayerName
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: Player Name
+    - useVariable: 1
+      name: RallyBestTime
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value:
+    - useVariable: 1
+      name: RallyCurrentTime
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value:
+    - useVariable: 1
+      name: SaveCarparts
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: carparts.txt
+    - useVariable: 1
+      name: SaveSlot
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value:
+    - useVariable: 1
+      name: Version
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: 164
+    - useVariable: 1
+      name: WWWChatAddress
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value:
+    - useVariable: 1
+      name: WWWChatPassword
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value:
+    - useVariable: 1
+      name: WWWChatUsername
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value:
+    - useVariable: 1
+      name: WWWdatabaseURL
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: http://www.johannesrojola.com/mscdb/ES2.php
+    - useVariable: 1
+      name: WWWdb_password
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: kardaaniakseli
+    - useVariable: 1
+      name: WWWdb_savefile
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: mscdb.txt
+    - useVariable: 1
+      name: WWWdb_username
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: mscdb
+    vector2Variables: []
+    vector3Variables:
+    - useVariable: 1
+      name: CarVelocity
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {x: 0, y: 0, z: 0}
+    - useVariable: 1
+      name: GarbageSpawnPos
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {x: 0, y: 0, z: 0}
+    - useVariable: 1
+      name: PlayerCrashEnergy
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {x: 0, y: 0, z: 0}
+    - useVariable: 1
+      name: PlayerDir
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {x: 0, y: 0, z: 0}
+    - useVariable: 1
+      name: PlayerVelocity
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {x: 0, y: 0, z: 0}
+    colorVariables: []
+    rectVariables: []
+    quaternionVariables: []
+    gameObjectVariables:
+    - useVariable: 1
+      name: AssemblyDatabase
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: AssemblyPart
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: AssemblyPoint
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: BodyBootlid
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: BodyBumperFront
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: BodyBumperRear
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: BodyDoorLeft
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: BodyDoorRight
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: BodyFenderLeft
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: BodyFenderRight
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: BodyHood
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: CarRadio
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: CarTireDB
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: GUIGearObject
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: HoistHook
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: ItemInHand
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: ItemPivot
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: LookAtTarget
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: Motor
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: POV
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: RoadCamSpawn
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: SavePlayer
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: SavePlayerCam
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: ShoppingBagSpawn
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: SongDatabase
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: SongDatabaseCD
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: SpectatorsPool
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: Statistics
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: Steam
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: TheCar
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: VehicleDeadBody
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: VehicleSpawn
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: WiringTool
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    objectVariables:
+    - useVariable: 1
+      name: JointBattery
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      typeName: UnityEngine.FixedJoint
+      value: {fileID: 0}
+    - useVariable: 1
+      name: MotorJointCar
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      typeName: UnityEngine.HingeJoint
+      value: {fileID: 0}
+    - useVariable: 1
+      name: MotorJointHoist
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      typeName: UnityEngine.HingeJoint
+      value: {fileID: 0}
+    - useVariable: 1
+      name: RadioOnAir
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      typeName: UnityEngine.AudioClip
+      value: {fileID: 0}
+    - useVariable: 1
+      name: RadioOnFolk
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      typeName: UnityEngine.AudioClip
+      value: {fileID: 0}
+    materialVariables:
+    - useVariable: 1
+      name: CarLightsOff
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      typeName: UnityEngine.Object
+      value: {fileID: 2100000, guid: b4ae64407b5b7c9428e590bda94c15f9, type: 2}
+    - useVariable: 1
+      name: CarLightsOn
+      tooltip:
+      showInInspector: 0
+      networkSync: 0
+      typeName: UnityEngine.Object
+      value: {fileID: 2100000, guid: e6a77f11e24dc9c4a88e675b2b898be6, type: 2}
+    textureVariables: []
+  events:
+  - DISABLE_GUI
+  - SWEAR
+  - DISASSEMBLE
+  - PLAYERINCAR
+  - SAVEGAME
+  - ISASSEMBLED
+  - REPLACEMENT
+  - IS_DAMAGED
+  - SETUP
+  - ASSEMBLE
+  - DEATH
+  - DROP_TOOL
+  - DROP_PART
+  - NOCURRENT
+  - RADIO_UPDATE
+  - WAKEUP
+  - CLEAN
+  - SPAWNITEM
+  - PURCHASE
+  - DRINKBEER
+  - RALLYRESULT
+  - LEADERBOARD
+  - JUMPSTART
+  - ITEM_AX
+  - DRINKVIINA
+  - PASSOUT
+  - TIGHTEN
+  - UNTIGHTEN
+  - APPROACH
+  - ACCELERATE
+  - CRUISE
+  - EMERGENCY
+  - OPENDOOR
+  - TRAILERATTACH
+  - TRAILERDETACH
+  - FINGER
+  - GEARCHANGE
+  - RADIO_FOLK
+  - REPAIR
+  - BOLTS_ON
+  - BOLTS_OFF
+  - BRAKE
+  - CHASE
+  - FULLSTOP
+  - HYD_DOWN
+  - HYD_OFF
+  - HYD_UP
+  - REPAIRMODE_ON
+  - REPAIRMODE_OFF
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - CALIBRATE
+  - CLUTCH
+  - INVERT
+  - NEUTRAL
+  - RESET
+  - SHIFTDOWN
+  - SHIFTUP
+  - STEERING_LEFT
+  - STEERING_RIGHT
+  - THROTTLE
+  - TURNSIGNAL_RIGHT
+  - TURNSIGNAL_LEFT
+  - RANGE
+  - HIGHBEAM
+  - WIPERS
+  - ENDCHASE
+  - GLOBALEVENT
+  - HANDBRAKE
+  - DANCEOFF
+  - DANCE
+  - BOOST
+  - ELEC_CUTOFF
+  - GHOST
+  - RESETWIRING
+  - PLAYERFIST
+  - PLAYERFINGER
+  - OPENBAG
+  - REVERSE
+  - GREETINGS
